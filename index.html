@@ -44,32 +44,33 @@
       
       <div class="flex flex-col mb-2 uppercase">
         <label for="first-name" class="font-mono tracking-wide">First Name</label>
-        <input class="border text-gray-800 max-w-xs outline-none focus:ring-4" type="text" name="first_name" id="first_name" />
+        <input class="required border text-gray-800 max-w-xs outline-none focus:ring-4" type="text" name="first_name" id="first_name" />
       </div>
       <div class="flex flex-col mb-2 uppercase">
         <label for="last-name" class="font-mono tracking-wide">Last Name</label>
-        <input class="border text-gray-800 max-w-xs outline-none focus:ring-4" type="text" name="last-name" id="last-name" />
+        <input class="required border text-gray-800 max-w-xs outline-none focus:ring-4" type="text" name="last-name" id="last-name" />
       </div>
       <div class="flex flex-col mb-2 uppercase">
         <label for="email" class="font-mono tracking-wide">Email</label>
-        <input class="border text-gray-800 max-w-xs outline-none focus:ring-4 invalid:border-red-500 invalid:text-red-600
+        <input class="required border text-gray-800 max-w-xs outline-none focus:ring-4 invalid:border-red-500 invalid:text-red-600
         focus:invalid:border-red-500 focus:invalid:ring-red-500" type="email" name="email" id="email" />
       </div>
       <div class="flex flex-col mb-2 uppercase">
         <label for="phone-number" class="font-mono tracking-wide">Phone number</label>
-        <input class="border text-gray-800 max-w-xs outline-none focus:ring-4 invalid:border-red-500 invalid:text-red-600
+        <input class="required border text-gray-800 max-w-xs outline-none focus:ring-4 invalid:border-red-500 invalid:text-red-600
         focus:invalid:border-red-500 focus:invalid:ring-red-500" type="number" name="phone-number" id="phone-number" />
       </div>
       <div class="flex flex-col mb-2 uppercase" >
         <label for="password" class="font-mono tracking-wide">Password</label>
-        <input class="border text-gray-800 max-w-xs outline-none focus:ring-4" type="password" name="password" id="password" />
+        <input class="required border text-gray-800 max-w-xs outline-none focus:ring-4" type="password" name="password" id="password" />
       </div>
-  
+      
     </div>
   </form>
 
   <div class="sign-up p-4">
-    <button class="bg-teal-800 cursor-pointer hover:bg-teal-600 p-4 m-4 rounded-xl text-md text-white uppercase font-mono">Create an account</button>
+    <button type="submit" class="bg-teal-800 cursor-pointer hover:bg-teal-600 p-4 m-4 rounded-xl text-md text-white uppercase font-mono">Create an account</button>
+    
     <p class="text-left pl-4">Already have an account? <span class="text-md font-bold active:text-teal-800"><a  href="#">Log in</a></span></p>
   </div>
         </div>
