@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body class="h-screen bg-slate-100">
     <div class="form-container flex flex-col md:flex-row w-full">
@@ -39,39 +40,42 @@
           <form
         action="#"
         method="post"
-        class="speaker-form border border-slate-400 p-8 text-sm grid grid-cols-2 gap-4 w-full"
+        class="speaker-form border border-slate-400 p-8 text-sm grid grid-cols-2 gap-4 w-full" id="form"
       > 
       
       <div class="flex flex-col mb-2 uppercase">
         <label for="first-name" class="font-mono tracking-wide">First Name</label>
-        <input class="required border text-gray-800 max-w-xs outline-none focus:ring-4" type="text" name="first_name" id="first_name" />
+        <input class="border text-gray-800 max-w-xs outline-none focus:ring-2" type="text"  name="first-name" id="first-name"  />
+        <p class="text-xs text-red-600 uppercase hidden" id="first-name-helper">Please enter your first name</p>
       </div>
       <div class="flex flex-col mb-2 uppercase">
         <label for="last-name" class="font-mono tracking-wide">Last Name</label>
-        <input class="required border text-gray-800 max-w-xs outline-none focus:ring-4" type="text" name="last-name" id="last-name" />
+        <input class=" border text-gray-800 max-w-xs outline-none focus:ring-2" type="text" name="last-name" id="last-name" />
       </div>
       <div class="flex flex-col mb-2 uppercase">
         <label for="email" class="font-mono tracking-wide">Email</label>
-        <input class="required border text-gray-800 max-w-xs outline-none focus:ring-4 invalid:border-red-500 invalid:text-red-600
-        focus:invalid:border-red-500 focus:invalid:ring-red-500" type="email" name="email" id="email" />
+        <input class=" border text-gray-800 max-w-xs " type="email" name="email" id="email" />
+        <p class="text-xs text-red-600 uppercase hidden" id="email-helper">Please enter a valid email</p>
       </div>
       <div class="flex flex-col mb-2 uppercase">
         <label for="phone-number" class="font-mono tracking-wide">Phone number</label>
-        <input class="required border text-gray-800 max-w-xs outline-none focus:ring-4 invalid:border-red-500 invalid:text-red-600
+        <input class=" border text-gray-800 max-w-xs outline-none focus:ring-2 invalid:border-red-500 invalid:text-red-600
         focus:invalid:border-red-500 focus:invalid:ring-red-500" type="number" name="phone-number" id="phone-number" />
       </div>
       <div class="flex flex-col mb-2 uppercase" >
         <label for="password" class="font-mono tracking-wide">Password</label>
-        <input class="required border text-gray-800 max-w-xs outline-none focus:ring-4" type="password" name="password" id="password" />
+        <input class=" border text-gray-800 max-w-xs outline-none focus:ring-2" type="password" name="password" id="password" />
+        <p class="text-xs text-red-600 uppercase hidden" id="password-helper">Please enter a valid password more than 6 characters</p>
       </div>
       
     </div>
-  </form>
 
   <div class="sign-up p-4">
-    <button type="submit" class="bg-teal-800 cursor-pointer hover:bg-teal-600 p-4 m-4 rounded-xl text-md text-white uppercase font-mono">Create an account</button>
-    
-    <p class="text-left pl-4">Already have an account? <span class="text-md font-bold active:text-teal-800"><a  href="#">Log in</a></span></p>
+    <button type="submit" class="bg-teal-800 cursor-pointer hover:bg-teal-600 p-4 m-4 rounded-xl text-md text-white uppercase font-mono" id="submit-button">Create an account</button>
+
+  </form>
+
+    <p class="text-left pl-4 ">Already have an account? <span class="text-md font-bold text-teal-800 hover:underline underline-offset-4"><a href="#" >Log in</a></span></p>
   </div>
         </div>
     </div>
